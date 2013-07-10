@@ -9,6 +9,7 @@
     Colourify.prototype = {
         defaults: {
             colors: ["#17A39E","#F26D83","#67AF45","#F7941E"],
+            property: "color"
         },
         init: function() {
             // this.config is how you can access the defaults 
@@ -29,7 +30,7 @@
 
         // color the div you're using on the property defined
         colorIt: function() { 
-            this.$elem.css({"color": chosenColor});
+            this.$elem.css({this.config.property: chosenColor});
         }
     };
 
