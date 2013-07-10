@@ -8,7 +8,7 @@
 
     Colourify.prototype = {
         defaults: {
-            colors: ["#17A39E","#F26D83","#67AF45","#F7941E"],
+            colors: ["#17A39E","#F26D83","#67AF45","#F7941E"]
         },
         init: function() {
             // this.config is how you can access the defaults 
@@ -29,11 +29,11 @@
 
         // color the div you're using on the property defined
         colorIt: function() { 
-            this.$elem.css({"color": chosenColor});
+            this.$elem.css({color: chosenColor});
         }
     };
 
-    //this is basicallt what makes it function like a plugin
+    //this is basically what makes it function like a plugin
     $.fn.colourify = function(options) {
         return this.each(function(){
             new Colourify(this, options).init();
