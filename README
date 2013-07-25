@@ -1,0 +1,17 @@
+# A jQuery plugin to colorize your page via options curated by you :)
+
+## Options
+	* choose the color input 
+	* select the property being changed (the property must have a color input, such as background, color, fill, etc.)
+	
+## Defaults
+	* this plugin defaults to the colors used on unakravets.com
+	* the default property changed is 'color'
+
+## Example
+ $('.className').colourify({
+	colors: ['#4eb19d','#f32047','#02f7c6', '#bab8ef'],
+	property: 'background-color'
+	});
+
+This is for those indecisive people who still want to have a little bit of control. 

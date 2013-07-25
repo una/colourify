@@ -1,55 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Colourify</title>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title>Colourify</title>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    
-    <a href ="javascript:document.location.reload();">
-    <h1> My Sincerest Appologies </h1>
-    <h2 class="hello">Please choose prettier colors than this.</h2>
-    </a>
+	
+	<a href ="javascript:document.location.reload();">
+	<h1> Oh, hello there! </h1>
+	<h2 class="hello"> What a nice array of colors.</h2>
+	</a>
 
 </body>
 
 <style>
 
 body{
-    text-align: center;
+	text-align: center;
 }
 
 a{
-    text-decoration: none;
+	text-decoration: none;
 }
 
 h1{
-    font-family: 'Arvo', serif;
-    font-weight: 700;
-    text-align:center;
-    font-size: 60px;
-    display:block;
+	color: white;
+	display:block;
+	font-family: 'Arvo', serif;
+	font-size: 60px;
+	font-weight: 700;
+	padding: 30px;
+	text-align:center;
 }
 
 h2{
-    font-family: 'Arvo', serif;
-    font-weight: 700;
-    text-align:center;
-    font-size: 20px;
+	font-family: 'Arvo', serif;
+	font-size: 20px;
+	font-weight: 700;
+	text-align:center;
 }
-    
+	
 </style>
 
 <script src='http://code.jquery.com/jquery-latest.min.js'></script> 
 <script src='colourify.js'></script> 
 <script type="text/javascript">
 
- $("h1").colourify({
-    colors: ["yellow","red","blue"]
-    });
- $(".hello").colourify();
+ $('h1').colourify({
+	colors: ['#4eb19d','#f32047','#02f7c6', '#bab8ef'],
+	property: 'background'
+	});
+ $('.hello').colourify();
 
 </script>
 
