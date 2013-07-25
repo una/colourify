@@ -1,7 +1,7 @@
 (function(window, $) {
     var Colourify = function(elem, options) {
-        this.elem = elem; //element we're clicking on js object
-        this.$elem = $(elem); //the element's jquery object
+        this.elem = elem;
+        this.$elem = $(elem);
         this.options = options;
         this.metadata = this.$elem.data( 'plugin-options' );
     };
@@ -28,13 +28,11 @@
             chosenColor = this.config.colors[randno];
         },
 
-        // color the div you're using on the property defined
         colorIt: function() { 
-            this.$elem.css({this.config.property: chosenColor});
+            this.$elem.css(this.config.property, chosenColor);
         }
     };
 
-    //this is basicallt what makes it function like a plugin
     $.fn.colourify = function(options) {
         return this.each(function(){
             new Colourify(this, options).init();
