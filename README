@@ -1,0 +1,9 @@
+# A plugin to colorize your page via options curated by you :)
+
+## Options
+	* choose the color input 
+	* select the property being changed (the property must have a color input, such as background, color, fill, etc.)
+	
+## Defaults
+	* this plugin defaults to the colors used on unakravets.com
+	* the default property changed is 'color'
